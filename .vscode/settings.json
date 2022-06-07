@@ -1,0 +1,5 @@
+{
+  "javascript.preferences.quoteStyle": "auto",
+  "typescript.preferences.quoteStyle": "auto",
+  "prettier.singleQuote": true
+}

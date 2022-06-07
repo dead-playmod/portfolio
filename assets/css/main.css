@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .bg-blur {
+    @apply backdrop-filter backdrop-blur-sm bg-black bg-opacity-40 border border-opacity-40;
+  }
+}
+
+*{
+  scroll-behavior: smooth;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: 250ms ease-out;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-white/50 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover, ::-webkit-scrollbar-thumb:active {
+  @apply bg-white
+}
+.overflow-y-scroll {
+  scrollbar-color: rgba(255, 255, 255, 0.5) transparent;
+  scrollbar-width: thin;
+}
+
+::selection {
+  @apply bg-white/80 rounded-full text-black
+}
